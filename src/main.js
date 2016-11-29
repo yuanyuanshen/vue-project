@@ -4,6 +4,10 @@ import App from './app';
 import home from './components/home.vue';
 import list from './components/list.vue';
 import detail from './components/detail.vue';
+import todolist from './components/todolist.vue';
+import routerdata from './components/routerdata.vue';
+import tab1 from './components/routertab/tab1.vue';
+import tab2 from './components/routertab/tab2.vue';
 
 /*
 1. 定义（路由）组件。
@@ -28,6 +32,13 @@ const routes = [
   { path: '/home', component: home },
   { path: '/list', component: list },
   { path: '/detail', component: detail },
+  { path: '/todolist', component: todolist },
+  { path: '/routerdata', component: routerdata,
+    children: [
+      {path: 'tab1', component: tab1},
+      {path: 'tab2', component: tab2}
+    ]
+  }
 ];
 
 const router = new VueRouter({

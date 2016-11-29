@@ -31,7 +31,7 @@
                 <span class="weui_cell_bd weui_cell_primary">input框检查</span>
                 <span class="weui_cell_ft"></span>
             </router-link>
-            <router-link class="weui_cell" to="propsdata">
+            <router-link class="weui_cell" to="todolist">
                 <span class="weui_cell_bd weui_cell_primary">todoList Demo</span>
                 <span class="weui_cell_ft"></span>
             </router-link>
