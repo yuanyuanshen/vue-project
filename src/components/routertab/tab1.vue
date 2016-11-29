@@ -1,5 +1,5 @@
 <template>
-    <div class="tab tab1">this is{{message}}</div>
+    <div class="tab tab1">{{message}}</div>
 </template>
 <script>
     export default{

@@ -6,7 +6,7 @@
         </div>
         <div class="weui_tab">
             <ul class="weui_navbar">
-                <router-link tag="li" class="weui_navbar_item" @click="random" to="/routerdata/tab1">Vuejs</router-link tag="li">
+                <router-link tag="li" class="weui_navbar_item" @click.native="random" to="/routerdata/tab1">Vuejs</router-link tag="li">
                 <router-link tag="li" class="weui_navbar_item" to="/routerdata/tab2">VueTab</router-link>
             </ul>
             <div class="weui_tab_bd">
@@ -31,7 +31,6 @@
         methods:{
             random(){
                 this.msg=Math.random();
-              console.log("11");
             }
         }
     }
